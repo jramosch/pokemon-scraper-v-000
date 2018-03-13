@@ -19,7 +19,7 @@ class Pokemon
     pokemon = db.execute("SELECT * FROM pokemon WHERE id = ?",id)
     pokemon = pokemon.flatten
     new_pokemon = {}
-    new_pokemon = {id: pokemon[0], name: pokemon[1], type: pokemon[2], db: "#{db}"}
+    new_pokemon = {id: pokemon[0], name: pokemon[1], type: pokemon[2], hp: pokemon[3], db: "#{db}"}
     self.new(new_pokemon)
   end
 
