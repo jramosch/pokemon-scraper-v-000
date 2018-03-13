@@ -5,7 +5,8 @@ class Pokemon
     @id = pokemon[:id]
     @name = pokemon[:name]
     @type = pokemon[:type]
-    @hp = pokemon[:hp]
+    @hp = hp
+    #pokemon[:hp]
     @db = pokemon[:db]
     # remember to also update the initialize method to accept an argument of hp that defaults to nil if not set (so it still passes the non-bonus tests)
   end
